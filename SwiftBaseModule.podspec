@@ -23,5 +23,5 @@ TODO: Add long description of the pod here.
   s.swift_version = "5.0"
   s.static_framework = true
   s.source_files = 'SwiftBaseModule/Classes/**/*'
-
+  s.public_header_files = 'SwiftBaseModule/Classes/**/*.h'
 end
