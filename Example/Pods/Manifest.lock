@@ -1,0 +1,16 @@
+PODS:
+  - SwiftBaseModule (0.1.0)
+
+DEPENDENCIES:
+  - SwiftBaseModule (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftBaseModule:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftBaseModule: 81f719f3f3a2d916439513d1c3cd816f8dee07bd
+
+PODFILE CHECKSUM: 397b45130f43589604e6def86f63e18d6c6f1a60
+
+COCOAPODS: 1.8.4

@@ -1,0 +1,25 @@
+{
+  "name": "SwiftBaseModule",
+  "version": "0.1.0",
+  "summary": "A short description of SwiftBaseModule.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/2360219637/SwiftBaseModule",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "2360219637": "chenzhichao.vip@bytedance.com"
+  },
+  "source": {
+    "git": "https://github.com/2360219637/SwiftBaseModule.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "swift_versions": "5.0",
+  "static_framework": true,
+  "source_files": "SwiftBaseModule/Classes/**/*",
+  "swift_version": "5.0"
+}
