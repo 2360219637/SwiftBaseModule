@@ -20,8 +20,8 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/2360219637/SwiftBaseModule.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
-  s.swift_version = "5.0"
-  s.static_framework = true
   s.source_files = 'SwiftBaseModule/Classes/**/*'
   s.public_header_files = 'SwiftBaseModule/Classes/**/*.h'
+  s.swift_version = "5.0"
+  s.static_framework = true
 end
