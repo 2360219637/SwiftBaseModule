@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		05919D0A6D89C6FEC5265DBA /* Pods_SwiftBaseModule_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A39A65ACE0CE85D24462370 /* Pods_SwiftBaseModule_Example.framework */; };
+		2B3405182711369800AD9452 /* TTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3405172711369800AD9452 /* TTest.m */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -29,6 +30,9 @@
 
 /* Begin PBXFileReference section */
 		070191C2CC24033A7E1D23E9 /* Pods-SwiftBaseModule_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBaseModule_Example.release.xcconfig"; path = "Target Support Files/Pods-SwiftBaseModule_Example/Pods-SwiftBaseModule_Example.release.xcconfig"; sourceTree = "<group>"; };
+		2B3405152711369800AD9452 /* SwiftBaseModule_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftBaseModule_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		2B3405162711369800AD9452 /* TTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTest.h; sourceTree = "<group>"; };
+		2B3405172711369800AD9452 /* TTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTest.m; sourceTree = "<group>"; };
 		4A60EC26EBE3F2C250CC25C8 /* Pods-SwiftBaseModule_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBaseModule_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftBaseModule_Tests/Pods-SwiftBaseModule_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5A39A65ACE0CE85D24462370 /* Pods_SwiftBaseModule_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftBaseModule_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DB824883AF95DFA53EDE500 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -95,10 +99,13 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				2B3405162711369800AD9452 /* TTest.h */,
+				2B3405172711369800AD9452 /* TTest.m */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				2B3405152711369800AD9452 /* SwiftBaseModule_Example-Bridging-Header.h */,
 			);
 			name = "Example for SwiftBaseModule";
 			path = SwiftBaseModule;
@@ -211,7 +218,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1250;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -312,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B3405182711369800AD9452 /* TTest.m in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
@@ -459,11 +467,14 @@
 			baseConfigurationReference = C4E9CE2875AC898F0E88B09F /* Pods-SwiftBaseModule_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwiftBaseModule/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftBaseModule/SwiftBaseModule_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -474,11 +485,13 @@
 			baseConfigurationReference = 070191C2CC24033A7E1D23E9 /* Pods-SwiftBaseModule_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwiftBaseModule/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftBaseModule/SwiftBaseModule_Example-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};

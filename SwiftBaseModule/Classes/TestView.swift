@@ -10,6 +10,4 @@ import UIKit
 
 public class TestView: UIView {
     var ocView: OCView? = nil
-    
-
 }

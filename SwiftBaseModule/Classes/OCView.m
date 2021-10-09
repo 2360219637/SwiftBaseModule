@@ -6,9 +6,12 @@
 //
 
 #import "OCView.h"
+#import <SwiftBaseModule/SwiftBaseModule-Swift.h>
 
 @implementation OCView
 
-
+- (void)test {
+    TestView *testV = [TestView new];
+}
 
 @end
