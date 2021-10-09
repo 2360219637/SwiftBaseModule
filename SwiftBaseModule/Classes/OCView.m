@@ -6,7 +6,7 @@
 //
 
 #import "OCView.h"
-#import <SwiftBaseModule/SwiftBaseModule-Swift.h>
+#import "SwiftBaseModule-Swift.h"
 
 @implementation OCView
 
